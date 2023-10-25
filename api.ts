@@ -1,7 +1,7 @@
 import { todo } from "node:test";
 import { ITask } from "./types/tasks";
 
-const baseUrl = 'http://localhost:3001/tasks';
+const baseUrl = 'http://localhost:3000/tasks';
 
 export const getAllTodos = async (): Promise<ITask[]> => {
     const res = await fetch(`${baseUrl}`, { cache: 'no-store' });
